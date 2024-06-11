@@ -1,11 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mususi</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-pulse"></i>
+          <a href="/">Music Player</a>
+        </div>
+        <div class="menu">
+          <h5>Menu</h5>
+          <ul>
+            <li>
+              <i class="bx bxs-bolt-circle"></i>
+              <a onclick="loadPage('/explore')">Explore</a>
+            </li>
+            <li>
+              <i class="bx bxs-volume-full"></i>
+              <a href="#">Genres</a>
+            </li>
+            <li>
+              <i class="bx bxs-photo-album"></i>
+              <a href="#">Albums</a>
+            </li>
+            <li>
+              <i class="bx bxs-microphone"></i>
+              <a href="#">Artists</a>
+            </li>
+            <li>
+              <i class="bx bxs-radio"></i>
+              <a href="#">Podcasts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu">
+          <h5>Library</h5>
+          <ul>
+            <li>
+              <i class="bx bx-undo"></i>
+              <a href="#">Recents</a>
+            </li>
+            <li>
+              <i class="bx bxs-photo-album"></i>
+              <a href="#">Albums</a>
+            </li>
+            <li>
+              <i class="bx bxs-heart"></i>
+              <a href="#">Favourites</a>
+            </li>
+
+            <li>
+              <i class="bx bxs-folder"></i>
+              <a href="#">Local</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu">
+          <h5>Playlist</h5>
+          <ul>
+            <li>
+              <i class="bx bxs-plus-square"></i>
+              <a href="#">Create new</a>
+            </li>
+            <li>
+              <i class="bx bxs-caret-right-circle"></i>
+              <a href="#">Best of 2023</a>
+            </li>
+            <li>
+              <i class="bx bxs-caret-right-circle"></i>
+              <a href="#">Best of 2022</a>
+            </li>
+
+            <li>
+              <i class="bx bxs-caret-right-circle"></i>
+              <a href="#">Adele</a>
+            </li>
+          </ul>
+        </div>
+        <div class="playing">
+          <div class="top">
+            <img
+              src="https://vcdn1-giaitri.vnecdn.net/2021/10/16/adele-1634347210-9996-1634347226.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=-oTmkgpf0hmAj0-4RV3mAw"
+              alt=""
+            />
+            <h4>Apple<br />Homepod</h4>
+          </div>
+          <div class="bottom">
+            <i class="bx bx-podcast"></i>
+            <p>Playing On Device</p>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="function">
+          <div class="nav-link">
+            <button id="toggleSidebar">
+              <i class="bx bx-menu"></i>
+            </button>
+
+            <a href="#">Music</a>
+            <a href="#">Live</a>
+            <a href="#">Podcasts</a>
+          </div>
+
+          <div class="search">
+            <i class="bx bx-search"></i>
+            <input
+              type="text"
+              id="searchQuery"
+              placeholder="Type here to search"
+            />
+            <i class="bx bx-x-circle"></i>
+            <button>Tìm kiếm</button>
+          </div>
+        </div>
+        <div class="persona">
+          <i class="bx bxs-bell"></i>
+          <i class="bx bxs-cog"></i>
+          <div class="user">
+            <div class="left">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtntwJCZbyLh6y9roud3OKkjGOE9nYCQMrSW2hYGoWw&s"
+                alt=""
+              />
+            </div>
+            <div class="right">
+              <h5>The Night</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,14 @@
+.main {
+  grid-row: 2/3;
+  background-color: blue;
+  display: flex;
+}
+
+.main > .left {
+  flex: 2;
+}
+
+.main > .right {
+  flex: 1;
+  background-color: blueviolet;
+}

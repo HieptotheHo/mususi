@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+}
+/* CHO TIM KIEM (LEFT SECTION)*/
+.navbar .function {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 2em;
+}
+
+.navbar .persona {
+  flex: 1;
+}
+
+.navbar .function .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .function .nav-link a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #919191;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar .function .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 65%;
+  background-color: #1d1d1d;
+  border: 1px solid #464748;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.navbar .function .search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.navbar .function .nav-link button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1d;
+  border: 1px solid #464748;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* PERSONA (RIGHT SECTION) */
+.persona {
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.persona .user {
+  display: flex;
+}
+
+.persona .user .left {
+  display: flex;
+  align-items: center;
+  background: #32323d;
+  padding: 6px;
+  border-radius: 6px 0 0 6px;
+}
+
+.persona .user .left img {
+  width: 30px;
+  height: 30px;
+}
+
+.persona .user .right {
+  background-color: #25252d;
+  border-radius: 0 6px 6px 0;
+  padding: 13px;
+  color: #fff;
+}

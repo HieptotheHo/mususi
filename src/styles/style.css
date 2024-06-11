@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+i {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+}
+
+html,
+body {
+  background: linear-gradient(90deg, #050505, #18181d);
+  height: 100vh;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 7fr;
+
+  background: linear-gradient(90deg, #050505, #18181d);
+}
